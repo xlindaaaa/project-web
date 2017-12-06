@@ -1,0 +1,44 @@
+body {
+    font-family:  "Trebuchet MS", Nexa Bold, sans-serif;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+
+header li {
+    font-family: "Nexa Bold", Trebuchet MS, sans-serif;
+    font-size: 1.30em;
+    display: block;
+}
+
+header li img {
+    margin-top: 0;
+}
+
+header li a {
+    display: block;
+    color: #60B564;
+    text-decoration: none;
+    margin: 0.5em;
+}
+
+header li a:hover {
+    color: #3C338B;
+}
+
+section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 2em;
+    font-family:  "Nexa Bold", Trebuchet MS, sans-serif;
+}
+
+section li a {
+    color: #3C338B;
+    text-decoration: none;
+}
