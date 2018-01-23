@@ -10,43 +10,205 @@
 
 <body>
     <header>
-       <nav>
-        <ul>
-            <li><a href="#home"><img src="transavia.png" alt="transavia logo"></a></li>
-            <li><a href="#verhalen">Mijn verhalen</a></li>
-            <li><a href="#inloggen">Inloggen</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><img src="images/transavia.png" alt="transavia logo"></a>
+                </li>
+                <li>
+                    <a href="index.html" class="transaviahome">Transavia</a>
+                </li>
+                <li>
+                    <a href="#verhalen" class="navicoon"><img src="images/like.png" alt="mijn verhalen"></a>
+
+                    <a href="#verhalen" class="navtekst">Mijn verhalen</a>
+                </li>
+                <li>
+                    <a href="inloggen.html" class="navicoon"><img src="images/user.png" alt="mijn account"></a>
+
+                    <a href="inloggen.html" class="navtekst">Mijn account</a>
+                </li>
+                <li>
+                    <div class="zoeken">
+                        <a href="#zoeken" class="navicoon navicoon3"><img src="images/search.png" alt="zoeken"></a>
+                        <input type="text" name="search" placeholder="Zoeken">
+                    </div>
+                </li>
+            </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>Aanbevolen</h2>
-        <article>
-            <h3>Aanbevolen verhalen</h3>
+    <section id="section1">
+        <h2>Aanbevolen verhalen</h2>
+        <article class="tekst1">
+            <a href="#">Letterlijk
+                <img src="images/like-wit.png" alt="Like knop" class="likewit">
+            </a>
+        </article>
+
+
+        <!-- Deze tekst wordt pas weergegeven op tablet of desktop-->
+        <article class="tekst2">
+            <a href="#">
+                <h2>Schoorsteen</h2>
+                <p class="aanbevolen">Ik stap de schoorsteen uit. Mijn schoorsteen is net in slaap gevallen. Ik ben op weg naar de Openbare Schoorsteen, in de hoop dat ze daar Schoorsteenoefeningen, van Raymond Cheminée hebben. Het waait flink en miezert een beetje. Ik loop over een dunne schoorsteen langs die gapende schoorstenen. De Noord-Zuidschoorsteen laat z’n schoorstenen na.</p>
+
+            </a>
+        </article>
+
+        <article class="tekst3">
+            <a href="#">
+                <h2>Schoorsteen</h2>
+                <p class="aanbevolen">Ik stap de schoorsteen uit. Mijn schoorsteen is net in slaap gevallen. Ik ben op weg naar de Openbare Schoorsteen..</p>
+
+            </a>
         </article>
     </section>
 
-    <section>
-        <h2>Sorteer</h2>
-        <ul>
-            <li><a href="#">Populairiteit</a></li>
-            <li><a href="#">Nieuw naar oud</a></li>
-            <li><a href="#">Oud naar nieuw</a></li>
-            <li><a href="#">Alfabetisch</a></li>
-        </ul>
-    </section>
+    <main class="main1">
+        <h2 class="sorteren">Populaire verhalen</h2>
 
-    <main>
-        <h2>Populairiteit</h2>
-        <article>
-            <h2>Titel</h2>
-            <p>Blabla</p>
-        </article>
+        <form class="sorteren">
+            <ul>
+                <li>
+                    <button>Populair</button>
+                </li>
+                <li>
+                    <button>Nieuw</button>
+                </li>
+                <li>
+                    <button>Oud</button>
+                </li>
+                <li>
+                    <button>Alfabetisch</button>
+                </li>
+            </ul>
+        </form>
+
+        <div class="main">
+
+            <div class="flexcontainer">
+                <article>
+                    <img src="images/dramatisch.jpg" class="fotoartikel" alt="Foto van moe verhaal">
+                    <div class="likepositie">
+                        <a href="moe.html" class="artikellink">  <h3>Moe</h3>
+                        </a>
+
+                        <button class="like"></button>
+
+                    </div>
+                    <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de..
+                    </p>
+                    <a href="moe.html" class="leesmeer">Lees meer</a>
+                </article>
+
+
+                <article>
+                    <img src="images/ongeluk.jpg" class="fotoartikel" alt="Foto van ongeluk verhaal">
+                    <div class="likepositie">
+                        <a href="ongeluk.html" class="artikellink">
+                        <h3>Ongeluk</h3>
+                        </a>
+
+                        <button class="like"></button>
+
+                    </div>
+                    <p>Voor het Centraal Station stap ik lijn 13 uit midden in een plas die zo diep is dat mijn hele schoen erin verdwijnt..
+                    </p>
+
+                    <a href="ongeluk.html" class="leesmeer">Lees meer</a>
+                </article>
+            </div>
+
+
+            <div class="flexcontainer">
+                <article>
+                    <img src="images/schoorsteen.jpg" class="fotoartikel" alt="Foto van schoorsteen verhaal">
+                    <div class="likepositie">
+                        <a href="schoorsteen.html" class="artikellink">
+                        <h3>Schoorsteen</h3>
+                        </a>
+
+                        <button class="like"></button>
+
+                    </div>
+                    <p>
+                        Ik stap de schoorsteen uit. Mijn schoorsteen is net in slaap gevallen. Ik ben op weg naar de Openbare Schoorsteen...
+                    </p>
+
+                    <a href="schoorsteen.html" class="leesmeer">Lees meer</a>
+                </article>
+
+                <article>
+                    <img src="images/moe2.jpg" class="fotoartikel" alt="Foto van moe verhaal">
+                    <div class="likepositie">
+                        <a href="moe.html" class="artikellink">
+                        <h3>Dramatisch</h3>
+                        </a>
+
+                        <button class="like"></button>
+
+                    </div>
+                    <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de..
+                    </p>
+                    <a href="moe.html" class="leesmeer">Lees meer</a>
+                </article>
+            </div>
+
+
+            <div class="flexcontainer2">
+                <article>
+                    <img src="images/ongeluk2.jpg" class="fotoartikel" alt="Foto van ongeluk verhaal">
+                    <div class="likepositie">
+                        <a href="ongeluk.html" class="artikellink">
+                        <h3>Paniek</h3>
+                        </a>
+
+                        <button class="like"></button>
+
+                    </div>
+                    <p>Voor het Centraal Station stap ik lijn 13 uit midden in een plas die zo diep is dat mijn hele schoen erin verdwijnt..
+                    </p>
+
+                    <a href="ongeluk.html" class="leesmeer">Lees meer</a>
+                </article>
+
+                <article>
+                    <img src="images/schoorsteen2.jpg" class="fotoartikel" alt="Foto van schoorsteen verhaal">
+                    <div class="likepositie">
+                        <a href="schoorsteen.html" class="artikellink">
+                        <h3>Humortistisch</h3>
+                        </a>
+
+                        <button class="like"></button>
+
+                    </div>
+                    <p>
+                        Ik stap de schoorsteen uit. Mijn schoorsteen is net in slaap gevallen. Ik ben op weg naar de Openbare Schoorsteen...
+                    </p>
+
+                    <a href="schoorsteen.html" class="leesmeer">Lees meer</a>
+                </article>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <h4>Footer</h4>
+        <ul>
+            <li><a href="#">Algemeen</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Disclaimer</a></li>
+        </ul>
+
+        <a href="https://www.facebook.com/transavia.nl/?brand_redir=362202900613965"><img src="images/icoonfacebook.png" alt="Facebook social media"></a>
+        <a href="https://twitter.com/transavia"><img src="images/icoontwitter.png" alt="Twitter social media"></a>
+        <a href="https://www.instagram.com/transavia/"><img src="images/icooninstagram.png" alt="Instagram social media"></a>
     </footer>
+
+
+
+    <script src="js/script.js">
+    </script>
 </body>
 
 </html>
