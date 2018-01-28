@@ -8,7 +8,7 @@
     <title>Transavia</title>
 </head>
 
-<body>
+<body id="favorieten">
     <header>
         <nav>
             <ul>
@@ -47,55 +47,29 @@
         </nav>
     </header>
 
-    <section id="section1">
-        <h2>Aanbevolen verhalen</h2>
-        <article class="tekst1">
-            <a href="schoorsteen.html">Letterlijk
-                <img src="images/like-wit.png" alt="Like knop" class="likewit">
-            </a>
-        </article>
-
-
-        <!-- Deze tekst wordt pas weergegeven op tablet of desktop-->
-        <article class="tekst2">
-            <a href="schoorsteen.html">
-                <h2>Schoorsteen</h2>
-                <p class="aanbevolen">Ik stap de schoorsteen uit. Mijn schoorsteen is net in slaap gevallen. Ik ben op weg naar de Openbare Schoorsteen, in de hoop dat ze daar Schoorsteenoefeningen, van Raymond Cheminée hebben. Het waait flink en miezert een beetje. Ik loop over een dunne schoorsteen langs die gapende schoorstenen. De Noord-Zuidschoorsteen laat z’n schoorstenen na.</p>
-
-            </a>
-        </article>
-
-        <article class="tekst3">
-            <a href="schoorsteen.html">
-                <h2>Schoorsteen</h2>
-                <p class="aanbevolen">Ik stap de schoorsteen uit. Mijn schoorsteen is net in slaap gevallen. Ik ben op weg naar de Openbare Schoorsteen..</p>
-
-            </a>
-        </article>
-    </section>
 
     <main class="main1">
-        <h2 class="sorteren">Populaire verhalen</h2>
 
-        <form class="sorteren">
-            <ul>
-                <li>
-                    <button>Populair</button>
-                </li>
-                <li>
-                    <button>Nieuw</button>
-                </li>
-                <li>
-                    <button>Oud</button>
-                </li>
-                <li>
-                    <button>Alfabetisch</button>
-                </li>
-            </ul>
-        </form>
+
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+
+        <h2 class="sorteren">Favoriete verhalen</h2>
+        <p>Hier vind je een lijst van je favoriete verhalen. Download deze lijst om ze offline te bekijken!</p>
+
+        <div class="toggle">
+            <h3>Downloaden</h3>
+
+            <label class="switch">
+                <input type="checkbox" onclick="move()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+
 
         <div class="main">
-
             <div class="flexcontainer">
                 <article>
                     <img src="images/dramatisch.jpg" class="fotoartikel" alt="Foto van moe verhaal">
@@ -104,7 +78,7 @@
                             <h3>Moe</h3>
                         </a>
 
-                        <button class="like"></button>
+                        <button class="likerood"></button>
 
                     </div>
                     <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de..
@@ -120,7 +94,7 @@
                             <h3>Ongeluk</h3>
                         </a>
 
-                        <button class="like"></button>
+                        <button class="likerood"></button>
 
                     </div>
                     <p>Voor het Centraal Station stap ik lijn 13 uit midden in een plas die zo diep is dat mijn hele schoen erin verdwijnt..
@@ -128,69 +102,16 @@
 
                     <a href="ongeluk.html" class="leesmeer">Lees meer</a>
                 </article>
-            </div>
 
 
-            <div class="flexcontainer">
                 <article>
                     <img src="images/schoorsteen.jpg" class="fotoartikel" alt="Foto van schoorsteen verhaal">
                     <div class="likepositie">
                         <a href="schoorsteen.html" class="artikellink">
-                            <h3>Schoorsteen</h3>
+                            <h3>Humor</h3>
                         </a>
 
-                        <button class="like"></button>
-
-                    </div>
-                    <p>
-                        Ik stap de schoorsteen uit. Mijn schoorsteen is net in slaap gevallen. Ik ben op weg naar de Openbare Schoorsteen...
-                    </p>
-
-                    <a href="schoorsteen.html" class="leesmeer">Lees meer</a>
-                </article>
-
-                <article>
-                    <img src="images/moe2.jpg" class="fotoartikel" alt="Foto van moe verhaal">
-                    <div class="likepositie">
-                        <a href="moe.html" class="artikellink">
-                            <h3>Dramatisch</h3>
-                        </a>
-
-                        <button class="like"></button>
-
-                    </div>
-                    <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de..
-                    </p>
-                    <a href="moe.html" class="leesmeer">Lees meer</a>
-                </article>
-            </div>
-
-
-            <div class="flexcontainer2">
-                <article>
-                    <img src="images/ongeluk2.jpg" class="fotoartikel" alt="Foto van ongeluk verhaal">
-                    <div class="likepositie">
-                        <a href="ongeluk.html" class="artikellink">
-                            <h3>Paniek</h3>
-                        </a>
-
-                        <button class="like"></button>
-
-                    </div>
-                    <p>Voor het Centraal Station stap ik lijn 13 uit midden in een plas die zo diep is dat mijn hele schoen erin verdwijnt..
-                    </p>
-
-                    <a href="ongeluk.html" class="leesmeer">Lees meer</a>
-                </article>
-
-                <article>
-                    <img src="images/schoorsteen2.jpg" class="fotoartikel" alt="Foto van schoorsteen verhaal">
-                    <div class="likepositie">
-                        <a href="schoorsteen.html" class="artikellink">
-                            <h3>Humortistisch</h3>
-                        </a>
-
-                        <button class="like"></button>
+                        <button class="likerood"></button>
 
                     </div>
                     <p>
